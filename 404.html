@@ -11,8 +11,10 @@
             margin: 0;
             background-color: bisque;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
+            position: relative;
         }
 
         main {
@@ -25,10 +27,28 @@
         img {
             width: 300px;
             height: auto;
+            margin-bottom: 20px;
         }
 
         h2, h3 {
             margin: 5px 0;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: brown;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -38,5 +58,8 @@
         <h2>Error 404</h2>
         <h3>Not Found</h3>
     </main>
+    <footer>
+        <a href="https://gaf.my.id" target="_blank">My Website</a>
+    </footer>
 </body>
 </html>
