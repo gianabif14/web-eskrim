@@ -11,6 +11,7 @@
             margin: 0;
             background-color: bisque;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
         }
@@ -19,9 +20,29 @@
             width: 300px;
             height: auto;
         }
+
+        footer {
+            position: absolute;
+            bottom: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: brown;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <img src="./eskrim.png" alt="eskrim" id="eskrim">
+    <footer>
+        <a href="https://gaf.my.id" target="_blank">My Website</a>
+    </footer>
 </body>
 </html>
